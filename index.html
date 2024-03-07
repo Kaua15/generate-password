@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e2f0f61eff.js" crossorigin="anonymous"></script>
+    <title>Password Generate - Kauã Lima</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Password Generator</h1>
+        </div>
+        <div class="bodyPass">
+            <div class="input">
+                <input type="text" class="inputPass" placeholder="Password here!" disabled>
+                <button><i class="fa-solid fa-copy btn"></i></button>
+            </div>
+            <div class="wrapper">
+                <div class="wrapper-title">
+                    <h2 class="lenghtTitle">Password Length</h2>
+                    <span></span>
+                </div>
+                <input type="range" name="numbercaracteres" id="numbercaracteres" min="5" max=25>
+            </div>
+
+            <div class="options">
+                <h3 class="settingsTitle">Password Options</h3>
+                <ul class="optionList">
+                    <li>
+                        <input type="checkbox" checked=true name="lowercase" id="lowercase">
+                        <label for="lowercase">Lowercase (a - z)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="uppercase" id="uppercase">
+                        <label for="uppercase">Uppercase (A - Z)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="numbers" id="numbers">
+                        <label for="numbers">Numbers (0 - 9)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="symbols" id="symbols">
+                        <label for="symbols">Symbols (!@#$%)</label>
+                    </li>
+                </ul>
+                <button class="generateBtn">GENERATE</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
